@@ -32,3 +32,29 @@ crack cs = encodeStr cs (-factor)
            where factor = head (positions (minimum chitab) chitab)
                  chitab = [ chi2 (rotate n table' ) table | n <- [0..25] ]
                  table' = freqs cs
+                
+----------------------------------------------------------------------------
+
+--1
+shiftChar :: Char -> Int -> Char
+shiftChar c n = if isLower c then decodeChar (mod ((encodeChar c) + n) 26) else c
+
+--2
+encodeStr :: String -> Int -> String
+encodeStr str n = map (\x -> shiftChar x n) str
+
+--3
+countValids :: String -> Int
+countValids list = length(filter isLower list)
+
+--4
+countChar :: Char -> String -> Int
+countChar c str = length(filter (==c) str)
+
+--5
+freqs :: String -> [Float]
+freqs str = map (\x -> percent (countChar x str) (countValids str)) ['a'..'z']
+
+--6
+positions :: Float -> [Float] -> [Int]
+positions n list = map snd (filter (\x -> fst x == n) (zip list [0 ..]))
