@@ -33,3 +33,16 @@ zipmult(L1,L2,L3) :-
     L3 = [H3|T3],
     H3 is H1 * H2,
     zipmult(T1,T2,T3).
+
+%6
+potencias(0,[]).
+potencias(N,L) :-
+    N > 0,
+    calcPot(N,L,0).
+
+calcPot(N,[],N).
+calcPot(N,L,I) :-
+    L = [H|T],
+    H is 2**I,
+    I1 is I + 1,
+    calcPot(N,T,I1).
