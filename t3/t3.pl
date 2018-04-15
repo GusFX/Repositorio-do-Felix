@@ -54,3 +54,10 @@ positivos(L1,L2) :-
     L2 = [H2|T2],
     (H1 > 0 ->  H2 is H1, T = T2;T = L2),
     positivos(T1,T).
+    
+%8
+mesmaPosicao(A,[A|_],[A|_]).
+mesmaPosicao(A,L1,L2) :-
+    L1 = [_|T1],
+    L2 = [_|T2],
+    mesmaPosicao(A,T1,T2).
