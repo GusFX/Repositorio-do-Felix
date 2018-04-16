@@ -72,3 +72,12 @@ comissao(NP,LP,C) :-
     comissao(NP1,R,T).
 comissaoAux(H,[H|T],T).
 comissaoAux(X,[_|T],R) :- comissaoAux(X,T,R).
+
+%10
+azulejos(0,0) :- !.
+azulejos(NA,NQ) :-
+    sqrt(NA,X),
+    floor(X,N),
+    N1 is NA - N*N,
+    azulejos(N1,N2),
+    NQ is 1 + N2.
