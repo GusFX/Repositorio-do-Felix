@@ -32,3 +32,7 @@ regra3(CD) :-
     nth0(Id1,CD,w),
     nth0(Id2,CD,t),
     Id1>Id2.
+
+regra4(CD) :-
+    nth0(5,CD,X),
+    sucesso(X).
