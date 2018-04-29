@@ -48,3 +48,35 @@ aolado(X,Y,CD):-
 necessariamenteComposicao(X,CD) :-
     nextto(X,Y,CD),
     sucesso(Y).
+
+/*
+Questao 11. Qual das seguintes alternativas poderia
+ser a ordem das m´usicas no CD, da primeira
+para a s´etima faixa?
+(A) T, W, V, S, Y, X, Z
+(B) V, Y, T, S, W, Z, X
+(C) X, Y, W, S, T, Z, S
+(D) Y, T, W, S, X, Z, V
+(E) Z, T, X, W, V, Y, S
+*/
+
+%ordemCerta([t,w,v,s,y,x,z]).
+%ordemCerta([v,y,t,s,w,z,x]).
+%ordemCerta([x,y,w,s,t,z,s]).
+%ordemCerta([y,t,w,s,x,z,v]).
+%ordemCerta([z,t,x,w,v,y,s]).
+
+/*
+Questao 13. Qual das seguintes m´usicas ´e necessariamente
+uma composi¸c˜ao da banda?
+(A) S
+(B) T
+(C) X
+(D) Y
+(E) W
+*/
+%ordemCerta([y,t,w,s,x,z,v]), necessariamenteComposicao(s,[y,t,w,s,x,z,v]).
+%ordemCerta([y,t,w,s,x,z,v]), necessariamenteComposicao(t,[y,t,w,s,x,z,v]).
+%ordemCerta([y,t,w,s,x,z,v]), necessariamenteComposicao(x,[y,t,w,s,x,z,v]).
+%ordemCerta([y,t,w,s,x,z,v]), necessariamenteComposicao(y,[y,t,w,s,x,z,v]).
+%ordemCerta([y,t,w,s,x,z,v]), necessariamenteComposicao(w,[y,t,w,s,x,z,v]).
