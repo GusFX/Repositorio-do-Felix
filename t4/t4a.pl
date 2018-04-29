@@ -20,3 +20,10 @@ sucesso(z).
 
 regra1(CD) :- 
     CD = [_,_,_,s,_,_,_].
+    
+regra2(CD) :-
+    nth0(Id1,CD,s),
+    nth0(Id2,CD,w),
+    nth0(Id3,CD,y),
+    Id1>Id2,
+    Id1>Id3.
