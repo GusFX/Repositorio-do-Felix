@@ -36,3 +36,10 @@ regra3(CD) :-
 regra4(CD) :-
     nth0(5,CD,X),
     sucesso(X).
+
+ordemCerta(CD) :-
+	CD=[_,_,_,_,_,_,_],
+    regra1(CD),
+    regra2(CD),
+    regra3(CD),
+    regra4(CD).
