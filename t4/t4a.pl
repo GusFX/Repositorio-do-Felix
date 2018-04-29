@@ -44,3 +44,7 @@ ordemCerta(CD) :-
 aolado(X,Y,CD):-
     nextto(X,Y,CD);
     nextto(Y,X,CD).
+    
+necessariamenteComposicao(X,CD) :-
+    nextto(X,Y,CD),
+    sucesso(Y).
