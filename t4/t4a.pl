@@ -1,7 +1,4 @@
 /*   
-     T4 - Rafael Vales
-     Resolvendo problemas da OBI em Prolog
-     
      Problema: CD Independente (https://olimpiada.ic.unicamp.br/static/extras/obi2017/provas/ProvaOBI2017_f1i2.pdf)
      Uma banda formada por alunos e alunas da escola está gravando um CD com exatamente sete músicas
      distintas – S, T, V, W, X, Y e Z. Cada música ocupa exatamente uma das sete faixas contidas no
