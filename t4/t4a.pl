@@ -40,3 +40,7 @@ ordemCerta(CD) :-
     regra2(CD),
     regra3(CD),
     regra4(CD).
+    
+aolado(X,Y,CD):-
+    nextto(X,Y,CD);
+    nextto(Y,X,CD).
