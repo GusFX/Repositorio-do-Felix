@@ -15,3 +15,5 @@
      no CD cada sucesso de rock toca imediatamente após uma composição da banda).
      - Z é um sucesso de rock.
 */
+
+sucesso(z).
