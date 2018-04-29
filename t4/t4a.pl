@@ -27,3 +27,8 @@ regra2(CD) :-
     nth0(Id3,CD,y),
     Id1>Id2,
     Id1>Id3.
+
+regra3(CD) :-
+    nth0(Id1,CD,w),
+    nth0(Id2,CD,t),
+    Id1>Id2.
