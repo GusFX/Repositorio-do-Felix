@@ -27,3 +27,7 @@ regra4(L):-
     nth0(Id1,L,fofo),
     nth0(Id2,L,rock),
     Id1<Id2.
+
+regra5(L):-
+    nth0(Id,L,samba),
+    Id<6.
