@@ -51,3 +51,21 @@ ordem(L):-
     regra5(L),
     regra6(L),
     regra7(L).
+
+/*Questão 6. Qual das seguintes alternativas é uma
+possível lista completa e correta dos nomes ordenados,
+do mais votado ao menos votado?
+
+(A) Buda, Pingo, Zorro, Samba, Fofo, Teco, Rock
+(B) Buda, Pingo, Zorro, Teco, Fofo, Rock, Samba
+(C) Pingo, Zorro, Buda, Samba, Teco, Fofo, Rock
+(D) Pingo, Zorro, Samba, Teco, Buda, Fofo, Rock
+(E) Zorro, Pingo, Buda, Teco, Samba, Fofo, Rock
+
+?- ordem([buda,pingo,zorro,samba,fofo,teco,rock])
+?- ordem([buda,pingo,zorro,teco,fofo,rock,samba])
+?- ordem([pingo,zorro,buda,samba,teco,fofo,rock])
+?- ordem([pingo,zorro,samba,teco,buda,fofo,rock])
+?- ordem([zorro,pingo,buda,teco,samba,fofo,rock])
+
+*/
