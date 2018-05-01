@@ -31,3 +31,8 @@ regra4(L):-
 regra5(L):-
     nth0(Id,L,samba),
     Id<6.
+
+regra6(L):-
+    nth0(Id1,L,zorro),
+    nth0(Id2,L,pingo),
+    Id1>Id2.
