@@ -36,3 +36,10 @@ regra6(L):-
     nth0(Id1,L,zorro),
     nth0(Id2,L,pingo),
     Id1>Id2.
+
+regra7(L):-
+    nth0(Id1,L,zorro),
+    nth0(Id2,L,teco),
+    nth0(Id3,L,samba),
+    Id1<Id2,
+    Id1<Id3.
