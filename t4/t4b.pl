@@ -43,3 +43,11 @@ regra7(L):-
     nth0(Id3,L,samba),
     Id1<Id2,
     Id1<Id3.
+
+ordem(L):-
+    regra2(L),
+    regra3(L),
+    regra4(L),
+    regra5(L),
+    regra6(L),
+    regra7(L).
