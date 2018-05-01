@@ -17,3 +17,8 @@ regra2(L):-
     nth0(Id1,L,buda),
     nth0(Id2,L,teco),
     Id1<Id2.
+
+regra3(L):-
+    nth0(Id1,L,teco),
+    nth0(Id2,L,fofo),
+    Id1<Id2.
