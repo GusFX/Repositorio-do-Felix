@@ -12,3 +12,8 @@ anunciado, mas alguns dados da pesquisa foram divulgados:
 • Zorro recebeu menos votos do que Pingo.
 • Zorro recebeu mais votos do que Samba e mais votos do que Teco
 */
+
+regra2(L):-
+    nth0(Id1,L,buda),
+    nth0(Id2,L,teco),
+    Id1<Id2.
